@@ -1,0 +1,10 @@
+(name [if … end])
+
+(trigger
+    (tab if))
+
+(only-in source.pascal)
+
+(snippet [if %{1} then begin
+	%{0}
+end;])

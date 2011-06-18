@@ -1,0 +1,27 @@
+(trigger
+    (key [[cmd]R]))
+
+(name Run)
+
+(only-in source.pascal)
+
+(input nothing)
+
+(output html)
+
+(save file)
+
+(script [require_cmd fpc 'The Free Pascal Compiler is available from <a href="http://www.freepascal.org/">http://www.freepascal.org/</a>'
+
+cd "$TM_DIRECTORY"
+fpc "$TM_FILENAME"
+if [[ $? == 0 ]]; then
+  SCRIPT="TM_DIRECTORY=$TM_DIRECTORY"$'\nTM_FILENAME='"$TM_FILENAME"$'\ncd "$TM_DIRECTORY" && clear && "./${TM_FILENAME%.*}" && exit'
+  osascript <<APPLESCRIPT
+    tell app "Terminal"
+      activate
+      do script "${SCRIPT//\"/\"}"
+    end tell
+APPLESCRIPT
+fi
+])

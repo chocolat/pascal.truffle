@@ -1,0 +1,10 @@
+(name [class … end])
+
+(trigger
+    (tab class))
+
+(only-in source.pascal)
+
+(snippet [T%{1="ClassName"} = class
+	%{0}
+end;])

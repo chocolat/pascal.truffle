@@ -1,0 +1,10 @@
+(name [for … end])
+
+(trigger
+    (tab for))
+
+(only-in source.pascal)
+
+(snippet [for %{1="i"} := %{2="0"} to %{3="max"} do begin
+	%{0}
+end;])

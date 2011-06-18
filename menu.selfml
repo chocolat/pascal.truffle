@@ -1,0 +1,1 @@
+(menu command.run --- [snippet.begin-..-end-(begin)] [snippet.try-..-finally-(try)] --- snippet.for snippet.if --- [snippet.class-(class)] [snippet.unit-(unit)] --- [snippet.property-(prop)] [snippet.constructor,-destructor-(constructor)])

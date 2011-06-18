@@ -1,0 +1,8 @@
+(name Newline)
+
+(trigger
+    (key [[ctrl][enter]]))
+
+(only-in source.pascal)
+
+(snippet [#13#10])

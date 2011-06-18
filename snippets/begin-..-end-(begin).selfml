@@ -1,0 +1,10 @@
+(name [begin … end])
+
+(trigger
+    (tab begin))
+
+(only-in source.pascal)
+
+(snippet [begin
+	%{0}
+end;])

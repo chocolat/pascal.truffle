@@ -1,0 +1,19 @@
+(name [unit … implementation … end])
+
+(trigger
+    (tab unit))
+
+(only-in source.pascal)
+
+(snippet [unit %{1="unit_name"};
+
+interface
+
+uses
+	SysUtils%{2=", Classes"};
+
+implementation
+
+%{0}
+
+end.])

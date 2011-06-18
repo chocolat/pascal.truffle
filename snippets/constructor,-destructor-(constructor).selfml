@@ -1,0 +1,9 @@
+(name [constructor, destructor])
+
+(trigger
+    (tab constructor))
+
+(only-in source.pascal)
+
+(snippet [constructor Create%{1="()"};
+destructor Destroy; override;%{0}])

@@ -1,0 +1,12 @@
+(name [try … finally])
+
+(trigger
+    (tab try))
+
+(only-in source.pascal)
+
+(snippet [try
+	%{0}
+finally
+	%{1}
+end;])
